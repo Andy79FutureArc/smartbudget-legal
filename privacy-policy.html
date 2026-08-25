@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SmartBudget</title>
+    <meta name="description" content="Privacy Policy for the SmartBudget Android application (com.smartbudget.pro).">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+            --border-color: #334155;
+            --table-header-bg: #0f172a;
+            --table-alt-row: rgba(255, 255, 255, 0.02);
+            --callout-bg: rgba(56, 189, 248, 0.08);
+            --callout-border: #38bdf8;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-color: #f8fafc;
+                --card-bg: #ffffff;
+                --text-primary: #0f172a;
+                --text-secondary: #475569;
+                --text-muted: #64748b;
+                --accent: #0284c7;
+                --accent-hover: #0369a1;
+                --border-color: #e2e8f0;
+                --table-header-bg: #f1f5f9;
+                --table-alt-row: #f8fafc;
+                --callout-bg: rgba(2, 132, 199, 0.06);
+                --callout-border: #0284c7;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.65;
+            font-size: 16px;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 36px;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .meta-item strong {
+            color: var(--text-secondary);
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-top: 36px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.015em;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li strong {
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        .callout {
+            background-color: var(--callout-bg);
+            border-left: 4px solid var(--callout-border);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .callout p {
+            color: var(--text-primary);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            margin: 24px 0;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.925rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: var(--text-primary);
+            font-weight: 600;
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) td {
+            background-color: var(--table-alt-row);
+        }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.875em;
+            background-color: rgba(125, 125, 125, 0.15);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent);
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 10px;
+            }
+
+            .container {
+                padding: 24px 18px;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Privacy Policy for SmartBudget</h1>
+        <div class="meta-info">
+            <span class="meta-item"><strong>Effective Date:</strong> August 25, 2026</span>
+            <span class="meta-item"><strong>App Name:</strong> SmartBudget</span>
+            <span class="meta-item"><strong>Package:</strong> <code>com.smartbudget.pro</code></span>
+        </div>
+    </header>
+
+    <main>
+        <h2>1. Introduction</h2>
+        <p>Welcome to <strong>SmartBudget</strong> ("we," "our," or "us"). SmartBudget is a personal budgeting, expense tracking, and financial insights application for Android designed to help you manage accounts, track income and expenses, plan category budgets, schedule bill reminders, monitor savings goals, and receive budgeting guidance through our assistant, <strong>Milo AI</strong>.</p>
+        <p>We respect your privacy and are committed to safeguarding your personal and financial data. This Privacy Policy explains what information we collect, how it is stored and processed, when and why it is synchronized or transmitted, and how you can manage or delete your data.</p>
+        <p>By using SmartBudget, you consent to the data practices described in this Privacy Policy.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>SmartBudget collects only the information necessary to provide and improve its budgeting features:</p>
+
+        <h3>A. Information You Provide Directly</h3>
+        <ul>
+            <li><strong>Profile &amp; Identity Information:</strong> When you choose to sign in using Google Sign-In, we receive your name, email address, profile picture URL, and a unique user account identifier.</li>
+            <li><strong>Financial &amp; Budgeting Records:</strong> User-entered financial information, including account nicknames, bank institution labels, account types, balances, credit limits, optional masked last 4 digits of account numbers, transaction titles, amounts, dates, categories, notes, recurring flags, budgets, savings goals, contributions, bills, and payment records.</li>
+            <li><strong>User Preferences:</strong> Preferred currency code and symbol, locale, budget cycle start day, and notification settings.</li>
+            <li><strong>Milo AI Conversations:</strong> Questions, prompts, and chat interactions you submit to Milo AI.</li>
+        </ul>
+
+        <h3>B. Information Collected Automatically</h3>
+        <ul>
+            <li><strong>App Usage &amp; Analytics:</strong> User interactions (such as creating a budget, logging an expense, or opening a notification), screen views, and app launch timestamps.</li>
+            <li><strong>Diagnostics &amp; Error Logs:</strong> Crash reports, stack traces, internal error breadcrumbs, device hardware model, and Android operating system version.</li>
+            <li><strong>Device Integrity Tokens:</strong> Cryptographic attestation tokens to verify device and app authenticity.</li>
+        </ul>
+
+        <h2>3. Financial Data</h2>
+        <p>SmartBudget is an informational tracker and budgeting planner.</p>
+
+        <h3>Scope of Financial Data:</h3>
+        <ul>
+            <li><strong>Account Tracking:</strong> User-defined account labels, account classifications (e.g., Bank, Savings, Cash, Credit Card, Investment), balances, and credit limits.</li>
+            <li><strong>Masked Identifiers:</strong> You may optionally input the last 4 digits of an account number for your personal reference.</li>
+            <li><strong>Transactions &amp; Budgets:</strong> Categorized income, expense, and transfer records with dates and custom notes.</li>
+            <li><strong>Bills &amp; Subscriptions:</strong> Bill titles, biller/provider names, amounts, due dates, recurrence intervals, and payment logs.</li>
+        </ul>
+
+        <div class="callout">
+            <p><strong>Important Financial Safeguards:</strong><br>
+            SmartBudget <strong>NEVER</strong> collects, requests, or stores full bank account numbers, debit or credit card CVV/CVC codes, card expiration dates, PINs, net banking passwords, or one-time passwords (OTPs). SmartBudget <strong>does not connect to live banking transfer networks</strong> and cannot withdraw, transfer, or move funds on your behalf.</p>
+        </div>
+
+        <h2>4. Authentication and Account Data</h2>
+        <p>SmartBudget offers secure authentication via <strong>Google Sign-In</strong> integrated with <strong>Supabase Auth</strong>:</p>
+        <ul>
+            <li><strong>Passwordless Authentication:</strong> Sign-in is handled securely via Android's native Credential Manager using Google ID tokens. SmartBudget never receives or stores your Google password.</li>
+            <li><strong>Guest &amp; Unauthenticated Usage:</strong> You may use SmartBudget locally without creating an account. In this mode, all data remains strictly on your local device under an isolated guest profile. When you subsequently choose to sign in, your local records can be linked to your authenticated account.</li>
+        </ul>
+
+        <h2>5. Local Storage and Cloud Sync</h2>
+        <p>SmartBudget utilizes a hybrid storage model:</p>
+
+        <h3>A. Local Storage (On-Device Database)</h3>
+        <ul>
+            <li>All your accounts, transactions, budgets, bills, savings goals, and Milo chat records are stored locally in an SQLite database on your device using Android Room (<code>smart_budget_database</code>).</li>
+            <li>This enables full offline functionality and fast data retrieval.</li>
+            <li>On-device security settings, such as the optional Biometric Lock, remain strictly on your device.</li>
+        </ul>
+
+        <h3>B. Cloud Synchronization (Supabase)</h3>
+        <ul>
+            <li>When you are signed in, your financial data synchronizes to a secure cloud database powered by <strong>Supabase</strong>.</li>
+            <li>Data in Supabase is partitioned by your unique account identifier (<code>user_id</code>) and protected by database Row-Level Security (RLS) policies. Only your authenticated account can read, write, or modify your synchronized data.</li>
+        </ul>
+
+        <h2>6. Milo AI / AI Processing</h2>
+        <p>SmartBudget includes <strong>Milo AI</strong>, an assistant that provides budgeting summaries, answers personal finance questions, and evaluates purchase affordability.</p>
+
+        <h3>How Milo AI Operates:</h3>
+        <ul>
+            <li><strong>Local Deterministic Queries:</strong> Whenever possible, factual lookups (e.g., "What is my total grocery spend this month?" or "When is my electricity bill due?") are calculated entirely on your device using local database queries without sending data to external AI servers.</li>
+            <li><strong>Cloud AI Processing (Firebase AI Logic / Google Gemini):</strong> When you ask open-ended, conversational, or subjective financial planning questions, SmartBudget transmits your prompt and a minimized context summary of relevant budgeting figures (e.g., category totals, balances, upcoming bill dates) to <strong>Firebase AI Logic</strong> powered by the <strong>Google Gemini 3.6 Flash</strong> model.</li>
+            <li><strong>Data Minimization:</strong> Milo AI is never provided with passwords, PINs, OTPs, authentication tokens, or government identifiers.</li>
+        </ul>
+
+        <div class="callout">
+            <p><strong>Disclaimer:</strong><br>
+            <strong>Milo AI and SmartBudget provide informational and educational insights only. Milo AI does not provide certified financial, investment, tax, legal, credit, or loan advice.</strong> You remain solely responsible for your financial decisions.</p>
+        </div>
+
+        <h2>7. Analytics and Crash Reporting</h2>
+        <p>We use Google Firebase services to maintain app reliability and understand feature usage:</p>
+        <ul>
+            <li><strong>Firebase Analytics:</strong> Collects high-level, aggregated events such as screen views, app opens, and feature activations. Analytics events <strong>do not</strong> include exact transaction amounts, account numbers, or personal notes.</li>
+            <li><strong>Firebase Crashlytics:</strong> Captures crash logs, stack traces, device hardware models, and OS versions when an unexpected error occurs. An anonymized user ID may be attached to crash reports to resolve account-specific technical issues.</li>
+        </ul>
+
+        <h2>8. App Check / Security</h2>
+        <p>SmartBudget uses <strong>Firebase App Check</strong> with <strong>Google Play Integrity</strong> in production builds:</p>
+        <ul>
+            <li>This service attests that incoming API requests originate from an authentic, unmodified SmartBudget application installed on a genuine Android device.</li>
+            <li>App Check transmits only device attestation data and does not collect or process your financial records.</li>
+        </ul>
+
+        <h2>9. Notifications</h2>
+        <p>SmartBudget provides scheduled reminders for upcoming bills and recurring payments:</p>
+        <ul>
+            <li><strong>Local Scheduling:</strong> Reminders are scheduled on-device using Android's <code>AlarmManager</code> and displayed via the <code>NotificationManager</code>.</li>
+            <li><strong>Permissions Used:</strong>
+                <ul>
+                    <li><code>android.permission.POST_NOTIFICATIONS</code>: Required on Android 13 (API level 33) and above to display notifications.</li>
+                    <li><code>android.permission.SCHEDULE_EXACT_ALARM</code>: Used to trigger bill reminder notifications at the exact scheduled date and time.</li>
+                    <li><code>android.permission.RECEIVE_BOOT_COMPLETED</code>: Restores your scheduled bill reminders automatically if your device restarts.</li>
+                </ul>
+            </li>
+            <li><strong>No Remote Marketing:</strong> We do not send unsolicited remote marketing push notifications. You can disable notifications at any time in the app settings or Android system settings.</li>
+        </ul>
+
+        <h2>10. How We Use Information</h2>
+        <p>We process your data solely for the following purposes:</p>
+        <ul>
+            <li>Providing core budgeting, expense tracking, and account management features.</li>
+            <li>Synchronizing your financial records across your signed-in devices.</li>
+            <li>Delivering local bill due-date reminders.</li>
+            <li>Generating customized budgeting suggestions and answers via Milo AI.</li>
+            <li>Diagnosing errors, monitoring system health, and fixing crashes.</li>
+            <li>Preventing fraudulent API usage and protecting backend infrastructure.</li>
+        </ul>
+
+        <h2>11. Third-Party Services</h2>
+        <p>SmartBudget integrates the following third-party infrastructure providers:</p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service Provider</th>
+                        <th>Service &amp; Purpose</th>
+                        <th>Privacy Policy Reference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Supabase Inc.</strong></td>
+                        <td>Cloud database storage, data synchronization, and user session management</td>
+                        <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy Policy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google LLC</strong></td>
+                        <td>Google Sign-In and Android Credential Manager for user authentication</td>
+                        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google LLC / Firebase</strong></td>
+                        <td>Firebase Analytics for aggregated app usage analytics</td>
+                        <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy &amp; Security</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google LLC / Firebase</strong></td>
+                        <td>Firebase Crashlytics for crash logging and stability monitoring</td>
+                        <td><a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener noreferrer">Firebase Crashlytics Terms</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google LLC / Firebase</strong></td>
+                        <td>Firebase App Check with Play Integrity for application security attestation</td>
+                        <td><a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Google Play Services Terms</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google LLC / Firebase</strong></td>
+                        <td>Firebase AI Logic (Google Gemini 3.6 Flash) for Milo AI natural language responses</td>
+                        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p><em>SmartBudget does not contain third-party advertising SDKs, data brokers, or location-tracking SDKs.</em></p>
+
+        <h2>12. Data Sharing</h2>
+        <ul>
+            <li><strong>We do NOT sell, rent, or trade your personal or financial data.</strong></li>
+            <li><strong>We do NOT share your data with third-party advertisers.</strong></li>
+            <li>We share data only with the cloud infrastructure providers listed in Section 11 to the extent necessary to deliver the application's services.</li>
+            <li>We may disclose data only if required to comply with applicable laws, valid court orders, or binding legal processes.</li>
+        </ul>
+
+        <h2>13. Data Retention</h2>
+        <ul>
+            <li><strong>Cloud-Synced Data:</strong> Stored in Supabase for as long as your account remains active.</li>
+            <li><strong>On-Device Data:</strong> Stored locally in your device's Room database until you clear app data, uninstall the app, or perform an in-app data reset.</li>
+            <li><strong>Analytics &amp; Diagnostics:</strong> Retained by Firebase according to standard retention periods (up to 14 months for analytics; up to 90 days for crash logs).</li>
+        </ul>
+
+        <h2>14. Account and Data Deletion</h2>
+        <p>We provide mechanisms for you to delete your data:</p>
+
+        <h3>A. Local Data Removal (In-App)</h3>
+        <ul>
+            <li>You can delete individual accounts, transactions, budgets, goals, and bills at any time inside the app.</li>
+            <li>Selecting <strong>Delete Account &amp; Data</strong> within the app settings clears your local database cache, resets local preferences, and signs you out of your session.</li>
+        </ul>
+
+        <h3>B. Complete Cloud Account and Data Deletion</h3>
+        <ul>
+            <li>To permanently delete your Supabase authentication account and all associated cloud-synced financial records from our servers, submit an account deletion request by emailing <strong><code>[INSERT_YOUR_SUPPORT_EMAIL]</code></strong> from the email address linked to your SmartBudget account.</li>
+            <li>Upon verification, your account profile and all corresponding cloud database records will be permanently removed from our production servers within 30 days.</li>
+        </ul>
+
+        <h2>15. Security</h2>
+        <p>We implement industry-standard safeguards to protect your information:</p>
+        <ul>
+            <li>All data transmissions between SmartBudget, Supabase, and Google Firebase are encrypted in transit using Transport Layer Security (TLS/HTTPS).</li>
+            <li>Cloud database access is restricted using Row-Level Security policies tied to verified user IDs.</li>
+            <li>You can enable the in-app Biometric Lock feature to require biometric authentication (fingerprint or face unlock) before accessing the app on your device.</li>
+        </ul>
+        <p><em>Please note that no method of electronic transmission or mobile storage is 100% secure, and we cannot guarantee absolute security.</em></p>
+
+        <h2>16. Children’s Privacy</h2>
+        <p>SmartBudget is not directed to individuals under the age of 13 (or 16 where required by applicable local law). We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us so we can promptly delete it.</p>
+
+        <h2>17. International Data Processing</h2>
+        <p>Your data may be transferred to, stored, and processed on servers located outside your country of residence (including facilities operated by Google and Supabase in the United States and other global regions). Data protection laws in these jurisdictions may differ from those in your country. By using SmartBudget, you consent to this processing.</p>
+
+        <h2>18. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy periodically. Any updates will be reflected with a revised <strong>Effective Date</strong> at the top of this document. Continued use of SmartBudget following the posting of changes constitutes acceptance of the revised policy.</p>
+
+        <h2>19. Contact Us</h2>
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact us at:</p>
+        <ul>
+            <li><strong>Application:</strong> SmartBudget (<code>com.smartbudget.pro</code>)</li>
+            <li><strong>Support Email:</strong> <a href="mailto:[INSERT_YOUR_SUPPORT_EMAIL]">[INSERT_YOUR_SUPPORT_EMAIL]</a></li>
+            <li><strong>Legal &amp; Privacy Site:</strong> <a href="https://andy79futurearc.github.io/Smart_budget_Tracker" target="_blank" rel="noopener noreferrer">https://andy79futurearc.github.io/Smart_budget_Tracker</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SmartBudget. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
